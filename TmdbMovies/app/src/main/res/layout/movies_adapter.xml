@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moreFromAuthorContainer1"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/articleImageView1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/articleImageView1"
+                android:text="TV"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvArticleTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/articleImageView1"
+                android:ellipsize="marquee"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvAuthorName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvArticleTitle1"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:gravity="bottom"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/viewCountTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txvAuthorName1"
+                android:layout_alignStart="@+id/txvAuthorName1"
+                android:layout_marginStart="9dp"
+
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:text="0"
+
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/commentCountTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txvAuthorName1"
+                android:layout_alignTop="@+id/viewCountTextView1"
+                android:layout_alignBottom="@+id/viewCountTextView1"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/viewCountTextView1"
+                android:drawablePadding="4dp"
+                android:gravity="top"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/recommendCountTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txvAuthorName1"
+                android:layout_alignTop="@+id/viewCountTextView1"
+                android:layout_alignBottom="@+id/viewCountTextView1"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/commentCountTextView1"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
